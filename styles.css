@@ -28,9 +28,9 @@
   margin-bottom: 40px;
 }
 
-
-#container-frontcover-nav {
-  display: flex;
+#container-main-top {
+  display: inline-block;
+  width: 1055px;
 }
 
 #container-menu-lateral {
@@ -40,8 +40,10 @@
   margin: 50px 110px 50px 427px;
 }
 
-#container-top {
-  display: flex;
+#container-poster-nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-top: 140px;
 }
 
 .data-poster {
@@ -93,12 +95,32 @@ header img {
 }
 
 nav a {
+  display: block;
   color: #000000;
   text-decoration: none;
   font-size: 15px;
   transition-duration: 1s;
   position: relative;
   cursor: pointer;
+  transition-duration: 0.7s;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+nav a:active {
+  color: #0045AD;
+}
+
+nav a::before {
+  content: "→ ";
+}
+
+nav a:hover {
+  padding-left: 12px;
+}
+
+nav:last-child {
+  margin-bottom: 0;
 }
 
 nav h1 {
@@ -113,22 +135,8 @@ nav .hr-header {
   width: 320px;
 }
 
-nav .hr-links {
-  background-color: #ADADAD;
-  height: 2px;
-  width: 300px;
-  margin: 21px 0;
-}
-
-nav p {
-  transition-duration: 0.7s;
-  font-weight: 500;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-nav p:hover {
-  padding-left: 10px;
+#page-top {
+  display: flex;
 }
 
 .photo-poster {
@@ -140,7 +148,7 @@ nav p:hover {
 
 #site-poster {
   display: flex;
-  margin-top: 140px;
+  margin-bottom: 20px;
   height: 75px;
 }
 
