@@ -16,7 +16,8 @@
 
 #container-conteudo {
   text-align: justify;
-  width: 1210px;
+  display: inline-block;
+  width: 850px;
   margin-left: 120px;
 }
 
@@ -41,9 +42,13 @@
 }
 
 #container-poster-nav {
-  background-color: #f4f4f4;
+  position: sticky;
+  top: 50px;
+  right: 110px;
+  height: 450px;
   padding: 10px;
   margin-top: 140px;
+  float: right;
 }
 
 .data-poster {
@@ -68,6 +73,28 @@
   font-weight: 400;
 }
 
+footer {
+  background: #000000;
+}
+
+.footer-logo {
+  display: flex;
+  margin: 0 0 37px 120px;
+  padding-top: 19px;
+  gap: 10px;
+}
+
+.footer-logo h1 {
+  font-weight: 800;
+  font-size: 24px;
+  color: white;
+}
+
+.footer-logo img{
+  width: 36px;
+  height: 31px;
+}
+
 header {
   height: 150px;
   background: #0045AD;
@@ -82,8 +109,36 @@ header img {
 }
 
 .img-frontcover {
-  width: 750px;
+  width: 850px;
   margin: 0 150px 35px 120px;
+}
+
+.lista-footer-links {
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 120px;
+  margin-bottom: 37px;
+}
+
+.lista-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition-duration: 0.7s;
+}
+
+.lista-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.lista-footer-links li {
+  float: left;
+  margin-left: 100px;
+}
+
+main {
+  display: inline-block;
 }
 
 .name-mindcontrol {
@@ -155,7 +210,15 @@ nav .hr-header {
 .titulo-materia {
   width: 750px;
   text-align: center;
-  margin: 68px 150px 51px 120px;
+  margin: 68px 150px 51px 170px;
   font-weight: 700;
   font-size: 48px;
+}
+
+.todos-direitos-reservados {
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 15px;
 }
